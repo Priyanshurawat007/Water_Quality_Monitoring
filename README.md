@@ -33,8 +33,6 @@ We applied systems thinking to analyze the intricate interactions involved in wa
 ![Feedback Loop 1](https://github.com/Cap26803/Water-Quality-Monitoring/assets/105357505/d294e465-0678-4b65-8937-41e76b930d11)
 ![Feedback Loop 2](https://github.com/Cap26803/Water-Quality-Monitoring/assets/105357505/5f5c27a0-337f-49f3-9b46-0fa20e7765b7)
 
-## Implementation Details
-
 ### Implementation Platform
 
 - **Frontend:** 
@@ -77,29 +75,8 @@ We applied systems thinking to analyze the intricate interactions involved in wa
 ## Final Outcomes:
 ![Home Page](https://github.com/Cap26803/Water-Quality-Monitoring/assets/106472393/6e0dae06-e3c9-4064-a6dd-f67f1a902004)
 ![Complaint Submission](https://github.com/Cap26803/Water-Quality-Monitoring/assets/106472393/649147a5-e65c-48b6-b8e3-684ffafc8113)
-![Admin Dashboard](https://github.com/Cap26803/Water-Quality-Monitoring/assets/106472393/3f036abf-6c88-4eae-8b10-7c5eb5c8c8f6)
 
 
-## Contribution Guidelines
+## CopyRight ©
 
-We welcome contributions from the community. If you have suggestions or bug reports, please create an issue or submit a pull request.
-
-### Steps to Contribute
-
-1\. Fork the repository
-
-2\. Create a new branch (`git checkout -b feature-branch`)
-
-3\. Make your changes
-
-4\. Commit your changes (`git commit -m 'Add some feature'`)
-
-5\. Push to the branch (`git push origin feature-branch`)
-
-6\. Open a pull request
-
-Thank you for supporting the Water Quality Monitoring platform and our mission to promote clean water and sustainable development!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+  &copy; Priyanshu Rawat 
