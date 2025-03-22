@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate for naviga
 
 const styles = {
     container: {
-        maxWidth: '500px',
-        margin: '100px auto', // Add margin from top
+        maxWidth: '700px',
+        margin: '200px auto', // Add margin from top
         padding: '20px',
+        background: 'url(https://wallpapercave.com/wp/5Oi2ZbZ.jpg) center/cover no-repeat',
         backgroundColor: '#f0f0f0',
         borderRadius: '8px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -16,8 +17,11 @@ const styles = {
     label: {
         display: 'block',
         marginBottom: '5px',
-        fontSize: '16px',
+        fontSize: '20px',
         fontWeight: 'bold',
+    },
+    h1: {
+        color: '#00008B',
     },
     input: {
         width: '100%',
@@ -28,9 +32,10 @@ const styles = {
         boxSizing: 'border-box',
     },
     button: {
-        width: '100%',
+        width: '50%',
         padding: '10px',
         fontSize: '16px',
+        fontWeight: 'bold',
         borderRadius: '4px',
         border: 'none',
         backgroundColor: '#007bff',
@@ -71,13 +76,14 @@ function Login() {
 
     return (
         <div style={styles.container}>
-            <h1>Administrator Login</h1>
+            <h1 style={styles.h1}>Administrator Login</h1>
             <form onSubmit={handleSubmit}>
                 <div style={styles.formGroup}>
                     <label style={styles.label}>Username</label>
                     <input
                         type="text"
                         name="email"
+                        placeholder='Enter Username'
                         value={formData.email}
                         onChange={handleChange}
                         style={styles.input}
@@ -89,13 +95,14 @@ function Login() {
                     <input
                         type="password"
                         name="password"
+                        placeholder='Enter Password'
                         value={formData.password}
                         onChange={handleChange}
                         style={styles.input}
                         required
                     />
                 </div>
-                <button type="submit" style={styles.button}>Click here to Login</button>
+                <button type="submit" style={styles.button}>Login</button>
                 {error && <p style={styles.errorMessage}>{error}</p>}
             </form>
         </div>

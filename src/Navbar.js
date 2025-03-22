@@ -41,14 +41,19 @@ export default function Navbar() {
   return (
     <nav style={styles.nav}>
       <Link to="/" style={styles.siteTitle}>
-        WQM
+        WQM (©rawat)
       </Link>
       <ul style={styles.linkList}>
-        <li style={styles.listItem}>
+      <li style={styles.listItem}>
+          <NavLink to="/Home" style={styles.link} activeStyle={styles.activeLink}>
+            Home
+          </NavLink>
+        </li>
+        {/* <li style={styles.listItem}>
           <NavLink to="/Complaint" style={styles.link} activeStyle={styles.activeLink}>
             Raise Complaint
           </NavLink>
-        </li>
+        </li> */}
         <li style={styles.listItem}>
           <NavLink to="/StayAware" style={styles.link} activeStyle={styles.activeLink}>
             Stay Aware
@@ -60,8 +65,13 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li style={styles.listItem}>
+          <NavLink to="/Register" style={styles.link} activeStyle={styles.activeLink}>
+            Register
+          </NavLink>
+        </li>
+        <li style={styles.listItem}>
           <NavLink to="/Login" style={styles.link} activeStyle={styles.activeLink}>
-            Admin
+            Admin Login
           </NavLink>
         </li>
       </ul>

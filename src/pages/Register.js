@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 const styles = {
     container: {
-        maxWidth: '500px',
+        maxWidth: '700px',
         margin: '0 auto',
         padding: '20px',
+        background: 'url(https://wallpapercave.com/wp/5Oi2ZbZ.jpg) center/cover no-repeat',
         backgroundColor: '#f0f0f0',
         borderRadius: '8px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -28,8 +29,11 @@ const styles = {
         border: '1px solid #ccc',
         boxSizing: 'border-box',
     },
+    h1: {
+        color: '#00008B',
+    },
     button: {
-        width: '100%',
+        width: '50%',
         padding: '10px',
         fontSize: '16px',
         borderRadius: '4px',
@@ -86,13 +90,14 @@ function Register() {
 
     return (
         <div style={styles.container}>
-            <h1>Register</h1>
+            <h1 style={styles.h1}>Register</h1>
             <form onSubmit={handleSubmit}>
                 <div style={styles.formGroup}>
                     <label style={styles.label}>Name</label>
                     <input
                         type="text"
                         name="name"
+                        placeholder='Enter your name'
                         value={formData.name}
                         onChange={handleChange}
                         style={styles.input}
@@ -104,6 +109,7 @@ function Register() {
                     <input
                         type="email"
                         name="email"
+                        placeholder='Enter your email'
                         value={formData.email}
                         onChange={handleChange}
                         style={styles.input}
@@ -115,6 +121,7 @@ function Register() {
                     <input
                         type="password"
                         name="password"
+                        placeholder='Enter a password'
                         value={formData.password}
                         onChange={handleChange}
                         style={styles.input}

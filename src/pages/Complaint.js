@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 
 const styles = {
   container: {
-    maxWidth: '500px',
+    maxWidth: '800px',
     margin: '50px auto 0',
     padding: '20px',
+    background: 'url(https://wallpapercave.com/wp/5Oi2ZbZ.jpg) center/cover no-repeat',
     backgroundColor: '#f0f0f0',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -28,9 +29,10 @@ const styles = {
     boxSizing: 'border-box',
   },
   button: {
-    width: '100%',
+    width: '50%',
     padding: '10px',
     fontSize: '16px',
+    fontWeight: 'bold',
     borderRadius: '4px',
     border: 'none',
     backgroundColor: '#007bff',
@@ -103,6 +105,7 @@ function Complaint() {
           <input
             type="text"
             name="name"
+            placeholder='Enter your full name'
             value={formData.name}
             onChange={handleChange}
             style={styles.input}
@@ -114,6 +117,7 @@ function Complaint() {
           <input
             type="text"
             name="address"
+            placeholder='Enter your address'
             value={formData.address}
             onChange={handleChange}
             style={styles.input}
@@ -154,6 +158,7 @@ function Complaint() {
           <input
             type="text"
             name="phoneNumber"
+            placeholder='Enter your phone number'
             value={formData.phoneNumber}
             onChange={handleChange}
             style={styles.input}
@@ -165,6 +170,7 @@ function Complaint() {
           <input
             type="email"
             name="emailAddress"
+            placeholder='Enter your email address'
             value={formData.emailAddress}
             onChange={handleChange}
             style={styles.input}

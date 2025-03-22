@@ -5,6 +5,7 @@ const styles = {
         maxWidth: '800px',
         margin: '0 auto',
         padding: '20px',
+        background: 'url(https://wallpapercave.com/wp/5Oi2ZbZ.jpg) center/cover no-repeat',
         backgroundColor: '#fff',
         borderRadius: '8px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -19,12 +20,13 @@ const styles = {
         fontSize: '24px',
         fontWeight: 'bold',
         marginBottom: '10px',
-        color: '#007bff',
+        color: '#00008B',
     },
     content: {
         fontSize: '18px',
         lineHeight: '1.6',
-        color: '#555',
+        color: '#000000',
+        fontWeight: 'bold',
         textAlign: 'justify', // Justify text content
     },
     paragraph: {

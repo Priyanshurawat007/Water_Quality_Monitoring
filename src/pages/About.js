@@ -3,29 +3,33 @@ import React from 'react';
 
 const styles = {
   page: {
+    background: 'url(https://wallpapercave.com/wp/5Oi2ZbZ.jpg) center/cover no-repeat',
     backgroundColor: '#f0f2f5', // Light background for the page
     padding: '20px',
+    
     minHeight: '100vh',
   },
   container: {
     maxWidth: '900px',
     margin: '20px auto', // Decreased margin from top
     padding: '30px',
-    backgroundColor: '#fff',
+    backgroundColor: 'opacity(10%)', // Corrected opacity value
     borderRadius: '10px',
     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
   },
   title: {
     fontSize: '36px',
+    
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: '#333',
+    color: 'blue',
     textAlign: 'center',
   },
   content: {
     fontSize: '18px',
+    fontWeight: 'bold',
     lineHeight: '1.8',
-    color: '#555',
+    color: '#000000',
     marginBottom: '40px',
   },
   developerContainer: {
@@ -81,32 +85,32 @@ const styles = {
 
 const developers = [
   {
-    name: 'Chinmay Paranjape',
-    image: 'images/chinmay.png', // Corrected path to actual image
-    description: 'Student at KLE Technological University',
+    name: 'Priyanshu Rawat',
+    image: 'images/myDp.jpg', // Corrected path to actual image
+    description: 'Student at DSCET',
     socialMedia: {
-      linkedin: 'https://www.linkedin.com/in/chinmay-paranjape-b0b297230/',
-      github: 'https://github.com/Cap26803',
+      linkedin: 'https://www.linkedin.com/in/priyanshu-rawat-b615551ab/',
+      github: 'https://github.com/Priyanshurawat007',
     },
   },
   {
-    name: 'Kushal Kaparatti',
-    image: 'images/kushal.png', // Corrected path to actual image
-    description: 'Student at KLE Technological University',
+    name: 'ChatGPT',
+    image: 'images/download.jpg', // Corrected path to actual image
+    description: 'GEN AI developed by OpenAI',
     socialMedia: {
-      linkedin: 'https://www.linkedin.com/in/kushal-kaparatti-3073a3252/',
-      github: 'https://github.com/kushalkaparatti',
+      // linkedin: 'https://www.linkedin.com/in/kushal-kaparatti-3073a3252/',
+      // github: 'https://github.com/kushalkaparatti',
     },
   },
-  {
-    name: 'Prathamesh Chitnis',
-    image: 'images/chitnis.jpg', // Corrected path to actual image
-    description: 'Student at KLE Technological University',
-    socialMedia: {
-      linkedin: 'https://www.linkedin.com/in/prathamesh-chitnis-5b1578249/',
-      github: '#',
-    },
-  },
+  // {
+  //   name: 'Prathamesh Chitnis',
+  //   image: 'images/chitnis.jpg', // Corrected path to actual image
+  //   description: 'Student at KLE Technological University',
+  //   socialMedia: {
+  //     linkedin: 'https://www.linkedin.com/in/prathamesh-chitnis-5b1578249/',
+  //     github: '#',
+  //   },
+  // },
 ];
 
 function About() {
@@ -133,7 +137,7 @@ function About() {
         </div>
         &nbsp;
         &nbsp;
-        <h2 style={styles.title}>Our Team</h2>
+        <h2 style={styles.title}>Me and My buddy</h2>
         <div style={styles.developerContainer}>
           {developers.map((developer, index) => (
             <div
